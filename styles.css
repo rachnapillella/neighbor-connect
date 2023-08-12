@@ -1,0 +1,284 @@
+/* Reset some default styles */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-image: url(neighbour.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Lightened background color with alpha */
+    /* background-blend-mode:darken; */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.overlay {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent overlay color */
+        pointer-events: none; /* Allow clicks to pass through the overlay */
+        z-index: -1; /* Place the overlay behind the content */
+    } /* Place the overlay behind the content */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1px;
+    position:sticky;
+    top: 0;
+    z-index: 100;
+    background-blend-mode:darken;
+}
+
+.navbar h1 {
+    /* margin-bottom: -10px; */
+    font-size: 2.4rem;
+    margin-right: 78px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    flex: none;
+    margin-block-start: -6px;
+}
+
+.nav-links li {
+    margin-right: 5px;
+    margin-bottom: -30px;
+    font-size: 1.7em;
+    padding-left: 9px;
+    padding-right: 26px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.nav-links li :hover{
+    color:orange;}
+.nav-links i {
+    margin-right: 5px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: -10px;
+    font-size: 1.4em;
+    padding-left: 9px;
+    padding-right: 26px;
+    flex: none;
+    margin-block-start: -30px;
+}
+.user-menu :hover{
+    color: yellow;
+}
+.user-menu a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-bottom: -25px;
+    font-size: 1.4em;
+    padding-left: 9px;
+    padding-right: 26px;
+}
+.user-menu a :hover {
+    color: antiquewhite;}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .user-menu {
+        margin-right: 20px;
+    }
+
+    .user-menu a {
+        margin: 0;
+    }
+}
+
+/* Body styles */
+/* Body styling */
+/* Body styling */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Main content styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Instagram post styling */
+.post-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 17px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    margin-right: 26px;
+}
+
+.username {
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.interaction-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    border-top: 1px solid white;
+}
+
+.interaction-icons i {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.connect-reminder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    border-top: 1px solid #ddd;
+}
+
+.connect-btn,
+.reminder-btn,.scheduled-time-btn {
+    padding: 8px 15px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.connect-btn:hover,
+.reminder-btn:hover,.scheduled-time-btn:hover {
+    background-color: #a63424; /* Darken color on hover */
+}
+/* ... (previous styles) */
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.post-card {
+    width: 100%;
+    max-width: 750px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Enable scrolling */
+    display: flex;
+    flex-direction: column;
+    margin: 30px 230px;
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transitions for effects */
+}
+
+.post-card:hover {
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+/* Footer link styling */
+footer a {
+    color: #c0392b; /* Highlight color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #a63424; /* Darken color on hover */
+}
+/* .interaction-icons Styles */
+.interaction-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.interaction-icons i {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+/* Hover colors for interaction icons */
+.interaction-icons i:hover {
+    cursor: pointer;
+}
+
+.interaction-icons i:hover.far.fa-heart {
+    color: red;
+}
+
+.interaction-icons i:hover.far.fa-comment {
+    color: grey;
+}
+
+.interaction-icons i:hover.far.fa-paper-plane {
+    color: blue;
+}
+
+
+
+
+
+
